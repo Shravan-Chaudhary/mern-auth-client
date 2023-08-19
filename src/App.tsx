@@ -1,14 +1,13 @@
-import './App.css'
-// import { Button } from './components/ui/button'
+import {Outlet} from "react-router-dom";
 import Header from "@/components/Header.tsx";
-import HomeScreen from "@/screens/HomeScreen.tsx";
+
 
 function App() {
   return (
-    <div >
+    <>
      <Header />
-        <HomeScreen />
-    </div>
+        <Outlet />
+    </>
   )
 }
 
