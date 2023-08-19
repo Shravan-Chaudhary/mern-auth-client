@@ -1,13 +1,15 @@
-import {useState} from "react";
+// import {useState} from "react";
+
+import {Link} from "react-router-dom";
 
 const SignInForm = () => {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-
-    const submitHandler = async (e) => {
-        e.preventDefault()
-        console.log('submit')
-    }
+    // const [email, setEmail] = useState('')
+    // const [password, setPassword] = useState('')
+    //
+    // const submitHandler = async (e) => {
+    //     e.preventDefault()
+    //     console.log('submit')
+    // }
     
     return (
         <>
@@ -33,7 +35,10 @@ const SignInForm = () => {
                         {/*SignUp Button*/}
                    <div className='flex flex-row mt-8 items-center text-md justify-start'>
                        <p className='font-medium text-base'>Don't have an account?</p>
-                       <button className='font-medium text-base text-blue-500 ml-2' >SignUp</button>
+
+                       <Link to={`/signup`}>
+                           <button className='font-medium text-base text-blue-500 ml-2' >Sign Up</button>
+                       </Link>
                    </div>
 
                         {/*Sign In Button*/}

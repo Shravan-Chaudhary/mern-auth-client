@@ -5,12 +5,14 @@ import App from './App.tsx'
 import './index.css'
 import HomeScreen from "@/screens/HomeScreen.tsx";
 import SignInScreen from "@/screens/SignInScreen.tsx";
+import SignUpScreen from "@/screens/SignUpScreen.tsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<App/>}>
             <Route index={true} path='/' element={<HomeScreen />} />
             <Route  path='/signin' element={<SignInScreen />} />
+            <Route  path='/signup' element={<SignUpScreen />} />
 
         </Route>
     )
